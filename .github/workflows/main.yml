@@ -1,0 +1,22 @@
+# Deploy for Cloudia
+# Documentation related to actions used: https://github.com/despegar/actions
+
+name: '[Not Runnable] - Cloudia - Deploy Template'
+run-name: Execute Deploy
+
+on:
+  workflow_call:
+    inputs:
+      hola:
+        required: true
+        type: string
+
+jobs:
+  deploy:
+    name: Execute deploy
+    runs-on: [ self-hosted ]
+    continue-on-error: false
+    steps:
+
+      - name: Link Actions
+        run: echo test
