@@ -5,7 +5,7 @@ name: '[Not Runnable] - Cloudia - Deploy Template'
 run-name: Execute Deploy
 
 on:
-  workflow_call:
+  workflow_dispatch:
     inputs:
       hola:
         required: true
